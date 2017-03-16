@@ -1,4 +1,4 @@
-/opt/rh/devtoolset-3/root/usr/lib64/python2.6/site-packages:/opt/rh/devtoolset-3/root/usr/lib/python2.6/site-packages:/home/lyh1/workspace/py-faster-rcnn/lib:/home/lyh1/workspace/py-faster-rcnn/caffe-fast-rcnn/python
+/opt/rh/devtoolset-3/root/usr/lib64/python2.6/site-packages:/opt/rh/devtoolset-3/root/usr/lib/python2.6/site-packages:/data/jinbin.lin/dev/py-faster-rcnn/lib:/data/jinbin.lin/dev/py-faster-rcnn/caffe-fast-rcnn/python
 WARNING: Logging before InitGoogleLogging() is written to STDERR
 I0603 10:25:30.769194 13841 net.cpp:49] Initializing net from parameters: 
 name: "VGG_CNN_M_1024"
@@ -591,4 +591,4 @@ I0603 10:25:32.953583 13841 net.cpp:816] Ignoring source layer loss_cls
 I0603 10:25:32.953586 13841 net.cpp:816] Ignoring source layer loss_bbox
 I0603 10:25:32.954524 13841 net.cpp:816] Ignoring source layer silence_rpn_cls_score
 I0603 10:25:32.954531 13841 net.cpp:816] Ignoring source layer silence_rpn_bbox_pred
-imagename /home/lyh1/workspace/py-faster-rcnn/data/demo/car.jpg
+imagename /data/jinbin.lin/dev/py-faster-rcnn/data/demo/car.jpg

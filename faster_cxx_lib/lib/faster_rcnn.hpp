@@ -20,9 +20,9 @@ using namespace std;
 #define     EV2641_ERR_IMAGE                            -13
 #define     EV2641_ERR_MODEL                            -14
 
-int EV2641_InitCarDetector(char * cardetect_model, int ObjSize ,hcd_t* phcd);
-int EV2641_ReleaseCarDetector(hcd_t hcd);
-int EV2641_A_GetCarRect(hcd_t hcd, const EV2641Image * image, int &max_ret_num, EV2641Rect * rect);
+//int EV2641_InitCarDetector(char * cardetect_model, int ObjSize ,hcd_t* phcd);
+//int EV2641_ReleaseCarDetector(hcd_t hcd);
+//int EV2641_A_GetCarRect(hcd_t hcd, const EV2641Image * image, int &max_ret_num, EV2641Rect * rect);
 
 
 
@@ -34,7 +34,9 @@ int EV2641_A_GetCarRect(hcd_t hcd, const EV2641Image * image, int &max_ret_num, 
 
 
 //background and car
-const int class_num=2;
+//const int class_num=2;
+// for pascal voc 20 classes + 1 background
+const int class_num=21;
 
 /*
  * ===  Class  ======================================================================
@@ -44,26 +46,26 @@ const int class_num=2;
  */
 class Detector {
 public:
-	Detector(const string& model_file, const string& weights_file);
-	void Detect(const string& im_name);
-	void bbox_transform_inv(const int num, const float* box_deltas, const float* pred_cls, float* boxes, float* pred, int img_height, int img_width);
-	void vis_detections(cv::Mat image, int* keep, int num_out, float* sorted_pred_cls, float CONF_THRESH);
-	void boxes_sort(int num, const float* pred, float* sorted_pred);
+    Detector(const string& model_file, const string& weights_file);
+    void Detect(const string& im_name);
+    void bbox_transform_inv(const int num, const float* box_deltas, const float* pred_cls, float* boxes, float* pred, int img_height, int img_width);
+    void vis_detections(cv::Mat image, int* keep, int num_out, float* sorted_pred_cls, float CONF_THRESH);
+    void boxes_sort(int num, const float* pred, float* sorted_pred);
 
 private:
-	shared_ptr<Net<float> > net_;
-	Detector(){}
+    shared_ptr<Net<float> > net_;
+    Detector(){}
 };
 
 //Using for box sort
 struct Info
 {
-	float score;
-	const float* head;
+    float score;
+    const float* head;
 };
 bool compare(const Info& Info1, const Info& Info2)
 {
-	return Info1.score > Info2.score;
+    return Info1.score > Info2.score;
 }
 
 #endif

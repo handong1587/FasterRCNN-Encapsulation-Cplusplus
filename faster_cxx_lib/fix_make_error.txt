@@ -1,0 +1,13 @@
+1.
+/usr/include/boost/python/detail/wrap_python.hpp:50:23: fatal error: pyconfig.h: No such file or directory
+
+Solution:
+export CPLUS_INCLUDE_PATH=/usr/include/python2.7
+
+2.
+F0316 10:23:07.547293 17181 syncedmem.hpp:18] Check failed: error == cudaSuccess (77 vs. 0)  an illegal memory access was encountered
+*** Check failure stack trace: ***
+./run_main.sh: line 3: 17181 Aborted                 (core dumped) ./main
+
+Solution:
+Set GPUID=0 can resolve this problem...

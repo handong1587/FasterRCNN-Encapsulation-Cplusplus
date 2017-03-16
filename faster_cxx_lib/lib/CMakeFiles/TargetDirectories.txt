@@ -1,1 +1,3 @@
-/home/lyh1/workspace/py-faster-rcnn/faster_cxx_lib/lib/CMakeFiles/faster_rcnn.dir
+/data/jinbin.lin/dev/py-faster-rcnn/faster_cxx_lib/lib/CMakeFiles/faster_rcnn.dir
+/data/jinbin.lin/dev/py-faster-rcnn/faster_cxx_lib/lib/CMakeFiles/edit_cache.dir
+/data/jinbin.lin/dev/py-faster-rcnn/faster_cxx_lib/lib/CMakeFiles/rebuild_cache.dir

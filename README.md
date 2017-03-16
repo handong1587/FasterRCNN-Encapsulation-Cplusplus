@@ -1,11 +1,21 @@
-# FasterRCNN-Encapsulation-Cplusplus
-Encapsulation C++ version of FasterRCNN
+This project is forked from [FasterRCNN-Encapsulation-Cplusplus](https://github.com/YihangLou/FasterRCNN-Encapsulation-Cplusplu) .
 
-Here is C++ Implementation of FasterRCNN Interface. As you can see, there are two folders and you can compile the self-defined cpp files
-with caffe, or compile your files as a dynamic lib. 
-How to compile it ? I have written the CMakeList.txt that can help you to comiple on 
-your own environment. What you need to do is only change some necessary paths. All the code has been tested and the test results are also
-included. 
-Wish it can help you~~~
+Please refer to below blogs for detail explanations.
 
-####If you find it helpful to you, please give me a star :) Thank you ~~~
+**faster_rcnn c++版本的 caffe 封装（1）**
+
+[http://www.cnblogs.com/louyihang-loves-baiyan/p/5485955.html](http://www.cnblogs.com/louyihang-loves-baiyan/p/5485955.html)
+
+**faster_rcnn c++版本的 caffe 封装，动态库（2）**
+
+[http://www.cnblogs.com/louyihang-loves-baiyan/p/5493344.html](http://www.cnblogs.com/louyihang-loves-baiyan/p/5493344.html)
+
+**将Faster RCNN的python demo改成C++ demo**
+
+[http://blog.csdn.net/xyy19920105/article/details/50440957](http://blog.csdn.net/xyy19920105/article/details/50440957)
+
+I added some local modifications to make it run on my Ubuntu 14.04 system, mostly on directory `faster_cxx_lib`.
+
+Original project use OpenCV3, I downgrade to use OpenCV2 (I remove all libopencv_imgcodecs dependencies in make scripts)
+
+It can run on both py-faster-rcnn's `alt-opt` and `end2end` caffemodels.

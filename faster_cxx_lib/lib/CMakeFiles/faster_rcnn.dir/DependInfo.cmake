@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/lyh1/workspace/py-faster-rcnn/faster_cxx_lib/lib/faster_rcnn.cpp" "/home/lyh1/workspace/py-faster-rcnn/faster_cxx_lib/lib/CMakeFiles/faster_rcnn.dir/faster_rcnn.cpp.o"
+  "/data/jinbin.lin/dev/py-faster-rcnn/faster_cxx_lib/lib/faster_rcnn.cpp" "/data/jinbin.lin/dev/py-faster-rcnn/faster_cxx_lib/lib/CMakeFiles/faster_rcnn.dir/faster_rcnn.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

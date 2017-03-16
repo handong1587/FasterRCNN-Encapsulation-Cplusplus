@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/lyh1/workspace/py-faster-rcnn/faster_cxx_lib/main.cpp" "/home/lyh1/workspace/py-faster-rcnn/faster_cxx_lib/CMakeFiles/main.dir/main.cpp.o"
+  "/data/jinbin.lin/dev/py-faster-rcnn/faster_cxx_lib/main.cpp" "/data/jinbin.lin/dev/py-faster-rcnn/faster_cxx_lib/CMakeFiles/main.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -13,6 +13,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../caffe-fast-rcnn/include"
   "../lib/nms"
   "lib"
+  "/data/jinbin.lin/dev/py-faster-rcnn/lib/nms"
   "/share/apps/local/include"
   "/usr/local/include"
   "/opt/python/include/python2.7"

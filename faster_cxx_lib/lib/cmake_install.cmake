@@ -1,4 +1,4 @@
-# Install script for directory: /home/lyh1/workspace/py-faster-rcnn/faster_cxx_lib/lib
+# Install script for directory: /data/jinbin.lin/dev/py-faster-rcnn/faster_cxx_lib/lib
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -29,7 +29,7 @@ endif()
 
 # Install shared libraries without execute permission?
 if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
-  set(CMAKE_INSTALL_SO_NO_EXE "0")
+  set(CMAKE_INSTALL_SO_NO_EXE "1")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/lyh1/workspace/py-faster-rcnn/faster_cxx_lib/lib/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/data/jinbin.lin/dev/py-faster-rcnn/faster_cxx_lib/lib/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
